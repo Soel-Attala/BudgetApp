@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kIWS96w+w2c=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\questpdf\\2025.7.0\\questpdf.2025.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

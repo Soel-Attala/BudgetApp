@@ -1,0 +1,5 @@
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Infrastructure\obj\Debug\net9.0\Presupuestos.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Infrastructure\obj\Debug\net9.0\Presupuestos.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Infrastructure\obj\Debug\net9.0\Presupuestos.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Infrastructure\obj\Debug\net9.0\Presupuestos.Infrastructure.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Infrastructure\obj\Debug\net9.0\Presupuestos.Infrastructure.csproj.CoreCompileInputs.cache

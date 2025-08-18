@@ -1,0 +1,413 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.WPF\\Presupuestos.WPF.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj",
+        "projectName": "Presupuestos.Application",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Domain\\Presupuestos.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Domain\\Presupuestos.Domain.csproj",
+        "projectName": "Presupuestos.Domain",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Domain\\Presupuestos.Domain.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Infrastructure\\Presupuestos.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Infrastructure\\Presupuestos.Infrastructure.csproj",
+        "projectName": "Presupuestos.Infrastructure",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Infrastructure\\Presupuestos.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Domain\\Presupuestos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Domain\\Presupuestos.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj",
+        "projectName": "Presupuestos.Reporting",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.WPF\\Presupuestos.WPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.WPF\\Presupuestos.WPF.csproj",
+        "projectName": "Presupuestos.WPF",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.WPF\\Presupuestos.WPF.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.WPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0-windows7.0": {
+            "targetAlias": "net9.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Application\\Presupuestos.Application.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Domain\\Presupuestos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Domain\\Presupuestos.Domain.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Infrastructure\\Presupuestos.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Infrastructure\\Presupuestos.Infrastructure.csproj"
+              },
+              "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Programación\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
