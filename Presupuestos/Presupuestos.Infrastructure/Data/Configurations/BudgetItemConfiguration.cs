@@ -1,23 +1,38 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Presupuestos.Domain.Enums;
 using Presupuestos.Domain.Models;
 
 namespace Presupuestos.Infrastructure.Data.Configurations;
 
-public class ExchangeRateRecordConfiguration : IEntityTypeConfiguration<ExchangeRateRecord>
+public class BudgetItemConfiguration : IEntityTypeConfiguration<BudgetItem>
 {
-    public void Configure(EntityTypeBuilder<ExchangeRateRecord> b)
+    public void Configure(EntityTypeBuilder<BudgetItem> b)
     {
-        b.ToTable("ExchangeRates");
+        b.ToTable("BudgetItems");
         b.HasKey(x => x.Id);
 
-        b.Property(x => x.BaseCurrency).HasMaxLength(10).IsRequired();
-        b.Property(x => x.QuoteCurrency).HasMaxLength(10).IsRequired();
-        b.Property(x => x.Rate).HasColumnType("decimal(18,8)"); // más precisión
-        b.Property(x => x.Provider).HasMaxLength(100);
-        b.Property(x => x.Note).HasMaxLength(300);
+        b.Property<BudgetItemType>(x => x.Type).IsRequired();
 
-        b.HasIndex(x => x.TimestampUtc);
-        b.HasIndex(x => new { x.BaseCurrency, x.QuoteCurrency });
+        // Materiales
+        b.Property(x => x.MaterialId);
+        b.Property(x => x.MaterialName).HasMaxLength(300);
+        b.Property(x => x.PriceUSD).HasColumnType("decimal(18,6)");
+        b.Property(x => x.Quantity).HasColumnType("decimal(18,6)");
+
+        // Subgrupo
+        b.Property(x => x.SubgroupId);
+        b.Property(x => x.SubgroupName).HasMaxLength(300);
+
+        // Mano de obra
+        b.Property(x => x.LaborItemId);
+        b.Property(x => x.LaborItemName).HasMaxLength(300);
+        b.Property(x => x.PriceARS).HasColumnType("decimal(18,6)");
+        b.Property(x => x.LaborQuantity).HasColumnType("decimal(18,6)");
+
+        // FK a Budget (shadow)
+        b.Property<Guid>("BudgetId");
+        b.HasIndex("BudgetId");
+        b.HasIndex(x => x.Type);
     }
 }

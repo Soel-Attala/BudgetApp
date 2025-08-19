@@ -32,3 +32,4 @@ C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Reporting\obj\Debug\net9.0\refint\Presupuestos.Reporting.dll
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Reporting\obj\Debug\net9.0\Presupuestos.Reporting.pdb
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Reporting\obj\Debug\net9.0\ref\Presupuestos.Reporting.dll
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Reporting\obj\Debug\net9.0\Presupuestos.Reporting.sourcelink.json

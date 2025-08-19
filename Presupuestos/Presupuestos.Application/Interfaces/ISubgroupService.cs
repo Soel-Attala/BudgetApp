@@ -2,19 +2,18 @@
 
 namespace Presupuestos.Application.Services.Interfaces;
 
-public interface ILaborService
+public interface ISubgroupService
 {
-    // Items
-    Task<IReadOnlyList<LaborItem>> GetAllAsync(CancellationToken ct = default);
-    Task<IReadOnlyList<LaborItem>> SearchAsync(string? text, Guid? categoryId, CancellationToken ct = default);
-    Task<LaborItem?> GetByIdAsync(Guid id, CancellationToken ct = default);
-    Task AddAsync(LaborItem item, CancellationToken ct = default);
-    Task UpdateAsync(LaborItem item, CancellationToken ct = default);
+    Task<Subgroup?> GetByIdAsync(Guid id, CancellationToken ct = default);
+    Task<IReadOnlyList<Subgroup>> GetAllAsync(CancellationToken ct = default);
+    Task<IReadOnlyList<Subgroup>> SearchAsync(string? text, CancellationToken ct = default);
+
+    Task AddAsync(Subgroup subgroup, CancellationToken ct = default);
+    Task UpdateAsync(Subgroup subgroup, CancellationToken ct = default);
     Task DeleteAsync(Guid id, CancellationToken ct = default);
 
-    // Categorías
-    Task<IReadOnlyList<LaborCategory>> GetCategoriesAsync(CancellationToken ct = default);
-    Task AddCategoryAsync(LaborCategory category, CancellationToken ct = default);
-    Task UpdateCategoryAsync(LaborCategory category, CancellationToken ct = default);
-    Task DeleteCategoryAsync(Guid id, CancellationToken ct = default);
+    // Materiales dentro del subgrupo
+    Task AddMaterialAsync(Guid subgroupId, SubgroupMaterial material, CancellationToken ct = default);
+    Task UpdateMaterialAsync(Guid subgroupId, SubgroupMaterial material, CancellationToken ct = default);
+    Task RemoveMaterialAsync(Guid subgroupId, Guid subgroupMaterialId, CancellationToken ct = default);
 }

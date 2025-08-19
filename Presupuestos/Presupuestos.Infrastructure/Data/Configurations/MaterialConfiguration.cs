@@ -1,43 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Presupuestos.Domain.Models;
-using Presupuestos.Infrastructure.Data.Configurations;
 
-namespace Presupuestos.Infrastructure.Data;
+namespace Presupuestos.Infrastructure.Data.Configurations;
 
-public class AppDbContext : DbContext
+public class MaterialConfiguration : IEntityTypeConfiguration<Material>
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-
-    // Catálogos
-    public DbSet<Material> Materials => Set<Material>();
-    public DbSet<LaborCategory> LaborCategories => Set<LaborCategory>();
-    public DbSet<LaborItem> LaborItems => Set<LaborItem>();
-
-    // Subgrupos
-    public DbSet<Subgroup> Subgroups => Set<Subgroup>();
-    public DbSet<SubgroupMaterial> SubgroupMaterials => Set<SubgroupMaterial>();
-
-    // Presupuestos
-    public DbSet<Budget> Budgets => Set<Budget>();
-    public DbSet<BudgetItem> BudgetItems => Set<BudgetItem>();
-    // BudgetTaxes se mapea como Owned de Budget (misma tabla)
-
-    // FX
-    public DbSet<ExchangeRateRecord> ExchangeRates => Set<ExchangeRateRecord>();
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    public void Configure(EntityTypeBuilder<Material> b)
     {
-        // Configs por tipo
-        modelBuilder.ApplyConfiguration(new MaterialConfiguration());
-        modelBuilder.ApplyConfiguration(new LaborCategoryConfiguration());
-        modelBuilder.ApplyConfiguration(new LaborItemConfiguration());
+        b.ToTable("Materials");
+        b.HasKey(x => x.Id);
 
-        modelBuilder.ApplyConfiguration(new SubgroupConfiguration());
-        modelBuilder.ApplyConfiguration(new SubgroupMaterialConfiguration());
-
-        modelBuilder.ApplyConfiguration(new BudgetConfiguration());
-        modelBuilder.ApplyConfiguration(new BudgetItemConfiguration());
-
-        modelBuilder.ApplyConfiguration(new ExchangeRateRecordConfiguration());
+        b.Property(x => x.Name).HasMaxLength(300).IsRequired();
+        b.Property(x => x.PriceUSD).HasColumnType("decimal(18,6)"); // preciso, sin redondeo
     }
 }
