@@ -1,15 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.IO;
+using System.Windows;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Presupuestos.Application.Interfaces;
+using Presupuestos.Application.Services.Interfaces;
 using Presupuestos.Infrastructure.Data;
 using Presupuestos.Infrastructure.Services;
 using Presupuestos.Reporting;
 using Presupuestos.WPF.ViewModels;
 using Presupuestos.WPF.Views;
-using System;
-using System.IO;
-using System.Windows;
 
 namespace Presupuestos.WPF;
 
@@ -21,70 +20,69 @@ public partial class App : Application
     {
         base.OnStartup(e);
 
-        // 1) Configuration (appsettings.json opcional)
-        var builder = new ConfigurationBuilder()
+        // Config
+        var cfg = new ConfigurationBuilder()
           .SetBasePath(Directory.GetCurrentDirectory())
-          .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-        var config = builder.Build();
+          .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+          .Build();
 
-        // 2) DI
-        var services = new ServiceCollection();
+        // DI
+        var sc = new ServiceCollection();
 
-        // ---- DbPath (SQLite local en AppData) ----
+        // DB en %LOCALAPPDATA%\Presupuestos\presupuestos.db
         var appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         var dbDir = Path.Combine(appData, "Presupuestos");
         Directory.CreateDirectory(dbDir);
         var dbPath = Path.Combine(dbDir, "presupuestos.db");
 
-        services.AddDbContext<AppDbContext>(opt =>
-          opt.UseSqlite($"Data Source={dbPath}"));
+        sc.AddDbContext<AppDbContext>(opt => opt.UseSqlite($"Data Source={dbPath}"));
 
-        // ---- HttpClient ----
-        services.AddHttpClient();
+        // HttpClient
+        sc.AddHttpClient();
 
-        // ---- Servicios de Aplicación (Interfaces -> Implementaciones de Infrastructure/Reporting) ----
-        services.AddScoped<IMaterialService, MaterialService>();
-        services.AddScoped<ILaborService, LaborService>();
-        services.AddScoped<ISubgroupService, SubgroupService>();
-        services.AddScoped<IBudgetService, BudgetService>();
-        services.AddScoped<IExchangeRateService, ExchangeRateService>();
+        // Services (Application -> Infrastructure)
+        sc.AddScoped<IMaterialService, MaterialService>();
+        sc.AddScoped<ILaborService, LaborService>();
+        sc.AddScoped<ISubgroupService, SubgroupService>();
+        sc.AddScoped<IBudgetService, BudgetService>();
+        sc.AddScoped<IExchangeRateService, ExchangeRateService>();
 
-        // Reporting (QuestPDF)
-        services.AddScoped<IBudgetReportService, BudgetPdfGenerator>();
+        // Reporting
+        sc.AddScoped<IBudgetReportService, BudgetPdfGenerator>();
 
-        // ---- ViewModels ----
-        services.AddTransient<MainViewModel>();
-        services.AddTransient<BudgetWizardViewModel>();
-        services.AddTransient<MaterialViewModel>();
-        services.AddTransient<LaborViewModel>();
-        services.AddTransient<SubgroupViewModel>();
-        services.AddTransient<SettingsViewModel>();
+        // ViewModels
+        sc.AddTransient<MainViewModel>();
+        sc.AddTransient<BudgetWizardViewModel>();
+        sc.AddTransient<MaterialViewModel>();
+        sc.AddTransient<LaborViewModel>();
+        sc.AddTransient<SubgroupViewModel>();
+        sc.AddTransient<SettingsViewModel>();
 
-        // ---- Views (Ventanas/Dialogs) ----
-        services.AddTransient<MainWindow>();
-        services.AddTransient<BudgetWizardView>();
-        services.AddTransient<MaterialView>();
-        services.AddTransient<LaborView>();
-        services.AddTransient<SubgroupView>();
-        services.AddTransient<SettingsView>();
+        // Views
+        sc.AddTransient<MainWindow>();
+        sc.AddTransient<BudgetWizardView>();
+        sc.AddTransient<MaterialView>();
+        sc.AddTransient<LaborView>();
+        sc.AddTransient<SubgroupView>();
+        sc.AddTransient<SettingsView>();
 
-        // Pickers / Diálogos
-        services.AddTransient<MaterialPickerDialog>();
-        services.AddTransient<LaborPickerDialog>();
+        // Pickers
+        sc.AddTransient<MaterialPickerDialog>();
+        sc.AddTransient<LaborPickerDialog>();
 
-        Services = services.BuildServiceProvider();
+        Services = sc.BuildServiceProvider();
 
-        // 3) Migrar/crear DB si falta
+        // Migrar
         using (var scope = Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
             db.Database.Migrate();
         }
 
-        // 4) Mostrar MainWindow con VM por DI
-        var main = Services.GetRequiredService<MainWindow>();
-        // Si tu MainWindow usa DataContext por DI:
-        main.DataContext = Services.GetRequiredService<MainViewModel>();
-        main.Show();
+        // Lanzar
+        var window = Services.GetRequiredService<MainWindow>();
+        window.DataContext = Services.GetRequiredService<MainViewModel>();
+        window.Show();
     }
 }
+

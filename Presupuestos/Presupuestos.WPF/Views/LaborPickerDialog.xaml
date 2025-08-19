@@ -1,0 +1,43 @@
+﻿<Window x:Class="Presupuestos.WPF.Views.LaborPickerDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Seleccionar mano de obra" Height="600" Width="900"
+        WindowStartupLocation="CenterOwner" ResizeMode="CanResizeWithGrip">
+    <Grid Margin="16" RowDefinitions="Auto,*,Auto">
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <ComboBox x:Name="CategoryCombo" Width="220" DisplayMemberPath="Name" SelectionChanged="FilterChanged"/>
+            <TextBox Width="280" x:Name="SearchBox" TextChanged="FilterChanged" ToolTip="Buscar por nombre o unidad"/>
+            <CheckBox x:Name="OnlySelectedCheck" Content="Ver solo seleccionados" Checked="FilterChanged" Unchecked="FilterChanged"/>
+            <Button Content="Seleccionar todo" Click="SelectAll_Click"/>
+            <Button Content="Quitar selección" Click="ClearSelection_Click"/>
+            <Button Content="Limpiar filtros" Click="ClearFilters_Click"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1" x:Name="Grid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="False">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="" Binding="{Binding IsSelected}" Width="40"/>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Item.Name}" Width="*"/>
+                <DataGridTextColumn Header="Categoría" Binding="{Binding Item.Category.Name}" Width="160"/>
+                <DataGridTextColumn Header="Unidad" Binding="{Binding Item.Unit}" Width="100"/>
+                <DataGridTextColumn Header="Unit ARS" Binding="{Binding Item.PriceARS, StringFormat={}{0:N6}}" Width="120"/>
+                <DataGridTemplateColumn Header="Cantidad" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Quantity, StringFormat={}{0:N2}}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Quantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8">
+            <Button Content="Cancelar" Click="Cancel_Click"/>
+            <Button Content="Agregar seleccionados" Click="Accept_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

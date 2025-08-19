@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Programaci\u00F3n\\Attala Ingenieria\\BudgetApp\\Presupuestos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5DB7D30-491C-4812-90CF-A75BD52CAE72}|Presupuestos.Reporting\\Presupuestos.Reporting.csproj|c:\\users\\usuario\\desktop\\programaci\u00F3n\\attala ingenieria\\budgetapp\\presupuestos\\presupuestos.reporting\\helpers\\pdfstyles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5DB7D30-491C-4812-90CF-A75BD52CAE72}|Presupuestos.Reporting\\Presupuestos.Reporting.csproj|solutionrelative:presupuestos.reporting\\helpers\\pdfstyles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F5DB7D30-491C-4812-90CF-A75BD52CAE72}|Presupuestos.Reporting\\Presupuestos.Reporting.csproj|c:\\users\\usuario\\desktop\\programaci\u00F3n\\attala ingenieria\\budgetapp\\presupuestos\\presupuestos.reporting\\budgetpdfgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5DB7D30-491C-4812-90CF-A75BD52CAE72}|Presupuestos.Reporting\\Presupuestos.Reporting.csproj|solutionrelative:presupuestos.reporting\\budgetpdfgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5DB7D30-491C-4812-90CF-A75BD52CAE72}|Presupuestos.Reporting\\Presupuestos.Reporting.csproj|c:\\users\\usuario\\desktop\\programaci\u00F3n\\attala ingenieria\\budgetapp\\presupuestos\\presupuestos.reporting\\helpers\\pdfstyles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5DB7D30-491C-4812-90CF-A75BD52CAE72}|Presupuestos.Reporting\\Presupuestos.Reporting.csproj|solutionrelative:presupuestos.reporting\\helpers\\pdfstyles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5DB7D30-491C-4812-90CF-A75BD52CAE72}|Presupuestos.Reporting\\Presupuestos.Reporting.csproj|c:\\users\\usuario\\desktop\\programaci\u00F3n\\attala ingenieria\\budgetapp\\presupuestos\\presupuestos.reporting\\presupuestos.reporting.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -138,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -146,8 +146,8 @@
               "Title": "Presupuestos.Reporting",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Programaci\u00F3n\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj",
               "RelativeDocumentMoniker": "Presupuestos.Reporting\\Presupuestos.Reporting.csproj",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Programaci\u00F3n\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj*",
-              "RelativeToolTip": "Presupuestos.Reporting\\Presupuestos.Reporting.csproj*",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Programaci\u00F3n\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Presupuestos.Reporting.csproj",
+              "RelativeToolTip": "Presupuestos.Reporting\\Presupuestos.Reporting.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-08-19T21:31:52.378Z",
@@ -159,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PdfStyles.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Programaci\u00F3n\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\Helpers\\PdfStyles.cs",
               "RelativeDocumentMoniker": "Presupuestos.Reporting\\Helpers\\PdfStyles.cs",
@@ -172,13 +172,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BudgetPdfGenerator.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Programaci\u00F3n\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\BudgetPdfGenerator.cs",
               "RelativeDocumentMoniker": "Presupuestos.Reporting\\BudgetPdfGenerator.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Programaci\u00F3n\\Attala Ingenieria\\BudgetApp\\Presupuestos\\Presupuestos.Reporting\\BudgetPdfGenerator.cs",
               "RelativeToolTip": "Presupuestos.Reporting\\BudgetPdfGenerator.cs",
-              "ViewState": "AgIAAKYBAAAAAAAAAAAAAHgAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAPIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T21:32:05.621Z",
               "EditorCaption": ""
@@ -388,7 +388,8 @@
               "RelativeToolTip": "Presupuestos.Domain\\Models\\BudgetItem.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAcwBIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:15:42.481Z"
+              "WhenOpened": "2025-08-18T20:15:42.481Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -400,7 +401,8 @@
               "RelativeToolTip": "Presupuestos.Infrastructure\\Data\\Configurations\\SubgroupMaterialConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T21:37:58.344Z"
+              "WhenOpened": "2025-08-18T21:37:58.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -412,7 +414,8 @@
               "RelativeToolTip": "Presupuestos.Infrastructure\\Data\\Configurations\\SubgroupConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T21:37:08.5Z"
+              "WhenOpened": "2025-08-18T21:37:08.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -424,7 +427,8 @@
               "RelativeToolTip": "Presupuestos.Infrastructure\\Data\\Configurations\\LaborItemConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T21:36:47.202Z"
+              "WhenOpened": "2025-08-18T21:36:47.202Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -436,7 +440,8 @@
               "RelativeToolTip": "Presupuestos.Infrastructure\\Data\\Configurations\\LaborCategoryConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T21:36:22.628Z"
+              "WhenOpened": "2025-08-18T21:36:22.628Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -448,7 +453,8 @@
               "RelativeToolTip": "Presupuestos.Application\\Interfaces\\IExchangeRateService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:39:54.127Z"
+              "WhenOpened": "2025-08-18T20:39:54.127Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -460,7 +466,8 @@
               "RelativeToolTip": "Presupuestos.Application\\Interfaces\\IBudgetService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:37:29.49Z"
+              "WhenOpened": "2025-08-18T20:37:29.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -472,7 +479,8 @@
               "RelativeToolTip": "Presupuestos.Domain\\Interfaces\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:35:33.423Z"
+              "WhenOpened": "2025-08-18T20:35:33.423Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -484,7 +492,8 @@
               "RelativeToolTip": "Presupuestos.Domain\\Models\\Budget.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:14:37.807Z"
+              "WhenOpened": "2025-08-18T20:14:37.807Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -496,7 +505,8 @@
               "RelativeToolTip": "Presupuestos.Domain\\Models\\ExchangeRedRecord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:20:06.674Z"
+              "WhenOpened": "2025-08-18T20:20:06.674Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -508,7 +518,8 @@
               "RelativeToolTip": "Presupuestos.Domain\\Models\\BudgetTaxes.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:15:15.19Z"
+              "WhenOpened": "2025-08-18T20:15:15.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -520,7 +531,8 @@
               "RelativeToolTip": "Presupuestos.Domain\\Models\\LaborCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:16:22.75Z"
+              "WhenOpened": "2025-08-18T20:16:22.75Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -532,7 +544,8 @@
               "RelativeToolTip": "Presupuestos.Domain\\Models\\Material.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T20:16:06.253Z"
+              "WhenOpened": "2025-08-18T20:16:06.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -544,7 +557,8 @@
               "RelativeToolTip": "Presupuestos.WPF\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T19:50:40.096Z"
+              "WhenOpened": "2025-08-18T19:50:40.096Z",
+              "EditorCaption": ""
             }
           ]
         }

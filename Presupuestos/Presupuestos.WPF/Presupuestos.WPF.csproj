@@ -20,8 +20,6 @@
     <Folder Include="Behaviors\" />
     <Folder Include="Assets\" />
     <Folder Include="Validation\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
   <PropertyGroup>

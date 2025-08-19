@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Presupuestos.WPF.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel Margin="16" Spacing="8">
+        <TextBlock Text="Cotización USD→ARS" FontWeight="SemiBold" FontSize="14"/>
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button Content="Exchangerate.host" Command="{Binding RefreshFromExHostCommand}"/>
+            <Button Content="Dolarsi Oficial" Command="{Binding RefreshDolarsiOficialCommand}"/>
+            <Button Content="Dolarsi Blue" Command="{Binding RefreshDolarsiBlueCommand}"/>
+        </StackPanel>
+
+        <TextBlock Text="Historial reciente" FontWeight="SemiBold" Margin="0,12,0,0"/>
+        <DataGrid ItemsSource="{Binding Recent}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Fecha (UTC)" Binding="{Binding TimestampUtc}" Width="180"/>
+                <DataGridTextColumn Header="Rate" Binding="{Binding Rate, StringFormat={}{0:N6}}" Width="120"/>
+                <DataGridTextColumn Header="Provider" Binding="{Binding Provider}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</UserControl>
