@@ -1,10 +1,10 @@
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\bin\Debug\net9.0\Presupuestos.Domain.deps.json
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\bin\Debug\net9.0\Presupuestos.Domain.dll
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\bin\Debug\net9.0\Presupuestos.Domain.pdb
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\obj\Debug\net9.0\Presupuestos.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\obj\Debug\net9.0\Presupuestos.Domain.AssemblyInfoInputs.cache
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\obj\Debug\net9.0\Presupuestos.Domain.AssemblyInfo.cs
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\obj\Debug\net9.0\Presupuestos.Domain.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\bin\Debug\net9.0\Presupuestos.Domain.deps.json
-C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\bin\Debug\net9.0\Presupuestos.Domain.dll
-C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\bin\Debug\net9.0\Presupuestos.Domain.pdb
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\obj\Debug\net9.0\Presupuestos.Domain.sourcelink.json
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\obj\Debug\net9.0\Presupuestos.Domain.dll
 C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.Domain\obj\Debug\net9.0\refint\Presupuestos.Domain.dll

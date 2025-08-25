@@ -12,7 +12,7 @@ using Presupuestos.WPF.Views;
 
 namespace Presupuestos.WPF;
 
-public partial class App : Application
+public partial class App : System.Windows.Application
 {
     public static ServiceProvider Services { get; private set; } = null!;
 

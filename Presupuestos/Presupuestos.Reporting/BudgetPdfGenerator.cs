@@ -17,11 +17,11 @@ namespace Presupuestos.Reporting;
 public class BudgetPdfGenerator : IBudgetReportService
 {
     // ===== Branding (placeholders: cambiá cuando tengas los datos reales) =====
-    private const string Company_Name = "Mi Empresa S.R.L.";
-    private const string Company_Tagline = "Soluciones a medida";
-    private const string Company_Address = "Av. Siempre Viva 742, Mendoza, AR";
-    private const string Company_Phone = "+54 261 555-1234";
-    private const string Company_Email = "contacto@miempresa.com";
+    private const string Company_Name = "Attala Ingenieria";
+    private const string Company_Tagline = "Servicio de Ingenieria";
+    private const string Company_Address = "El Moro 315";
+    private const string Company_Phone = "+54 2604306032";
+    private const string Company_Email = "attala.ingenieria@gmail.com";
 
     // El WPF copia /Assets al lado del .exe; acá buscamos ese logo.
     private static string LogoPath => Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "logo.png");
@@ -109,18 +109,24 @@ public class BudgetPdfGenerator : IBudgetReportService
     {
         container.Row(row =>
         {
-            row.RelativeItem().Text($"{Company_Address} | {Company_Phone} | {Company_Email}")
-              .FontSize(9).FontColor(Colors.Grey.Darken2);
+            // Izquierda: datos de contacto
+            row.RelativeItem().Text(t =>
+            {
+                t.Span($"{Company_Address} | {Company_Phone} | {Company_Email}")
+                 .FontSize(9).FontColor(Colors.Grey.Darken2);
+            });
 
+            // Derecha: paginación (estilo aplicado dentro del lambda)
             row.ConstantItem(120).AlignRight().Text(txt =>
             {
-                txt.Span("Página ");
-                txt.CurrentPageNumber();
-                txt.Span(" de ");
-                txt.TotalPages();
-            }).FontSize(9).FontColor(Colors.Grey.Darken2);
+                txt.Span("Página ").FontSize(9).FontColor(Colors.Grey.Darken2);
+                txt.CurrentPageNumber().FontSize(9).FontColor(Colors.Grey.Darken2);
+                txt.Span(" de ").FontSize(9).FontColor(Colors.Grey.Darken2);
+                txt.TotalPages().FontSize(9).FontColor(Colors.Grey.Darken2);
+            });
         });
     }
+
 
     private void CoverContent(IContainer container, Budget budget)
     {
@@ -238,12 +244,18 @@ public class BudgetPdfGenerator : IBudgetReportService
             {
                 col.Item().PaddingTop(4).Row(r =>
                 {
-                    r.RelativeItem().Text($"{budget.ClientAddress ?? ""}".Trim());
-                    r.ConstantItem(220).AlignRight().Text($"{budget.ClientPhone ?? ""}  {budget.ClientEmail ?? ""}".Trim());
-                }).DefaultTextStyle(s => s.FontSize(9).FontColor(Colors.Grey.Darken2));
+                    r.RelativeItem()
+                     .Text($"{budget.ClientAddress ?? ""}".Trim())
+                     .FontSize(9).FontColor(Colors.Grey.Darken2);
+
+                    r.ConstantItem(220).AlignRight()
+                     .Text($"{budget.ClientPhone ?? ""}  {budget.ClientEmail ?? ""}".Trim())
+                     .FontSize(9).FontColor(Colors.Grey.Darken2);
+                });
             }
         });
     }
+
 
     private void MaterialsTable(IContainer container, Budget budget)
     {

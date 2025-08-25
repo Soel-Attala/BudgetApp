@@ -1,0 +1,20 @@
+﻿Presupuestos.WPF
+
+
+winexe
+C#
+.cs
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.WPF\obj\Release\net9.0-windows\win-x64\
+Presupuestos.WPF
+none
+false
+TRACE;RELEASE;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\Presupuestos.WPF\App.xaml
+9448319864
+
+201210395278
+238139019600
+MainWindow.xaml;Views\BudgetWizardView.xaml;Views\LaborPickerDialog.xaml;Views\LaborView.xaml;Views\MainWindow.xaml;Views\MaterialPickerDialog.xaml;Views\MaterialView.xaml;Views\SettingView.xaml;Views\SubgroupView.xaml;
+
+False
+

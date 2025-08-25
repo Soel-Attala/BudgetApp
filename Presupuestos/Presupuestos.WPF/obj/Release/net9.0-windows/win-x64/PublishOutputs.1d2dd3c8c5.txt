@@ -1,0 +1,7 @@
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\publish\win-x64\Presupuestos.WPF.pdb
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\publish\win-x64\LatoFont\OFL.txt
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\publish\win-x64\Presupuestos.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\publish\win-x64\Presupuestos.Application.pdb
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\publish\win-x64\Presupuestos.Infrastructure.pdb
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\publish\win-x64\Presupuestos.Reporting.pdb
+C:\Users\Usuario\Desktop\Programación\Attala Ingenieria\BudgetApp\Presupuestos\publish\win-x64\Presupuestos.WPF.exe
